@@ -1,0 +1,64 @@
+<!-----------------
+Autor: Jennifer Lowe
+Date: 27/11/17
+------------------->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="testpoint" content="initial-scale=1, maximum-scale=1">
+
+		<script src="signature.js"></script>
+
+	</head>
+
+	<style>
+		body, canvas, div, form, input {
+			margin: 0;
+			padding: 0;
+            
+		}
+		#wrapper {
+			width: 100%;
+			padding: 1px;
+		}
+		canvas {
+            position: absolute; 
+            left: 0; 
+            right: 0; 
+            margin-left: auto; 
+            margin-right: auto; 
+			position: center;
+			border: 1px solid #000000;
+		}
+		h1, p {
+			padding-left: 2px;
+			width: 100%;
+			margin: 0 auto;
+		}
+		#controlPanel {
+			margin: 2px;
+		}
+	</style>
+
+	<body>
+		<div id="wrapper">
+			<p>Signature test</p>
+			<div id="canvas">
+				Canvas is not supported.
+			</div>
+
+			<script>
+				Signature.capture();
+			</script>
+			<button type="button" onclick="Signature.clear()">
+				Clear Signature
+			</button>
+			<br />
+            <button type="button" onclick="Signature.save()">
+				Save
+            </button>
+		</div>
+	</body>
+</html>
